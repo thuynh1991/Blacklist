@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title> Quiz </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="blacklist.css">
+
+<!-- Added Google font style for header-->
+<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+<div id="wrapper">
+    <style>
+        header {
+            font-family: 'Alex Brush';
+            font-size: 28px;
+        }
+
+        main {
+            background-image: url(background_trivia.jpg);
+            background-size: 100% 100%;
+            color: white;
+            padding: 2em;
+            font-weight: bold;
+            font-size: 18px;
+
+
+        }
+    </style>
+    <header>
+
+        <h1 style="text-align:center;"> Your Turn</h1>
+    </header>
+
+    <nav>
+
+        <!--        Added Image Link-->
+        <ul>
+            <li><a href="index.html"><img src="home.jpg" alt="Home" width="135" height="25"></a></li>
+            <li><a href="people.html"><img src="people.jpg" alt="Cast" width="135" height="25"></a></li>
+            <li><a href="timeline.html"><img src="timeline.jpg" alt="Timeline" width="135" height="25"></a></li>
+            <li><a href="quiz.html"><img src="quiz.jpg" alt="Quiz" width="135" height="25"></a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <h2>Send Us Your Comments</h2>
+        <p>Required fields marked with an asterisk *</p>
+        <form method="post" action="https:\\www.leecottrell.com\phpclass\postback.php">
+
+            <!--------------------------- Asking Informations ------------------------------>
+
+            <label for="yourName">*Name:</label>
+            <input type="text" name="Your Name" id="yourName" required="required" placeholder="your first and last name">
+            <label for="yourEmail">*E-mail:</label>
+            <input type="email" name="Your Email" id="yourEmail" required="required" placeholder="you@yourdomain.com">
+            <label for="yourRating">Rating (1 - 10):</label>
+            <input type="range" name="Movie Rating" id="movieRating" min="1" max="10">
+
+
+            <!--------------------------- Questions ------------------------------>
+
+            <label for="Question">*Why did Katarina kidnap red?:</label>
+            <input type="text" name="Why did Katarina kidnap red?" id="yourAnswer" required="required">
+            <label for="Question2">*Can Dembe be trusted?:</label>
+            <input type="text" name="Can Dembe be trusted?" id="yourAnswer" required="required">
+            <label for="Question3">*Will Aram join Samar?:</label>
+            <input type="text" name="Will Aram join Samar?" id="yourAnswer" required="required">
+            <label for="Question4">*Will Cooper get his hand dirty, again?:</label>
+            <input type="text" name="Will Cooper get his hand dirty, again?" id="yourAnswer" required="required">
+            <label for="Question5">*Will Katarina and Liz join forces?:</label>
+            <input type="text" name="Will Katarina and Liz join forces?" id="yourAnswer" required="required">
+
+            <!--------------------------- Comments ------------------------------>
+
+            <label for="yourComments">*Comments:</label>
+            <textarea name="Your Comments" id="yourComments" rows="2" cols="20" required="required"></textarea>
+            <input id="mySubmit" type="submit" value="Submit">
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>The TV show is continuing.</p>
+        <p>Copyright &copy; 2019 Thong Huynh.</p>
+        <p><a href="mailto:thong.huynh@acd.ccac.edu">thong.huynh@acd.ccac.edu</a></p>
+
+
+    </footer>
+</div>
+
+
+</html>

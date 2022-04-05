@@ -1,0 +1,252 @@
+body {
+    background-color: #FFFFFF;
+    color: #003366;
+    font-family: Georgia, "Times New Roman", serif;
+
+}
+
+header {
+    background-color: lightyellow;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    width: auto;
+    height: auto;
+    'border: 2px solid;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    color: crimson;
+    text-align: center;
+
+}
+
+h1 {
+    line-height: 250%;
+    text-indent: 1em;
+    margin-bottom: 0;
+}
+
+nav {
+    font-weight: bold;
+    background-color: lightsalmon;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    width: 180px;
+    height: inherit;
+}
+
+dt {
+    font-weight: bold;
+    color: #5280C5;
+    font-size: 1.1em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.category {
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    /*color: #5380C5;*/
+    color: yellow;
+
+
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    background-color:lightskyblue;
+    text-align: center;
+    padding: 2px;
+    
+     
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 700px;
+    background-color: lightsalmon;
+  
+}
+
+#img {
+    border: 0;
+}
+
+main {
+        
+    border: 1px;
+    border-style:inherit;
+    margin-left: 180px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+/*Using float for pictures*/
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+/******************************* Chapter 6: Page Layout ****************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+nav a:link {
+    color: #000066;
+}
+
+nav a:visited {
+    color: #5280C5;
+}
+
+nav a:hover {
+    color: #3262A3;
+}
+
+header,
+main,
+nav,
+footer {
+    display: block;
+}
+
+/****************** Chapter 7: Multiple display - Iphones, Ipads, Computers for website ******************/
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+
+    }
+
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+    }
+    h1{
+        margin: 0;
+        font-size: 1.8em;
+        line-height: 200%;
+    }
+    nav{
+        float: none;
+        padding: 0;
+        width: auto;
+    }
+    nav li{
+        display: inline-block;
+    }
+    nav a{
+        padding: 1em;
+        font-size: 1.2em;
+    }
+    nav ul{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    main{
+        font-size: 90%;
+        margin: 0;
+        padding-left: 2em;
+    }
+    footer{
+        margin: 0;
+    }
+}
+    
+@media only screen and (max-width: 768px){
+    
+    h1{
+        font-size: 1.5em;
+        line-height: 120%;
+    }
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1em;
+        border-bottom: 1px;
+        border-bottom-color: #330000;
+    }
+    
+    nav li{
+        display: block;
+    }
+    nav ul{
+        text-align: left;
+    }
+    main {
+        padding-left: 1em;
+    }
+        .category{
+        text-shadow: none;
+    }
+
+}
+    
+/***********************  Chapter 8: Creating tables ********************************************/
+
+        table {
+            margin: 1em;
+            border: 2px solid #000066;
+            border-collapse: collapse;
+           
+        }
+        td,
+        th {
+            padding: 0.5em;
+            border: 1px solid #000066; 
+        }
+
+/********************* Chapter 9: Using html link for Contact page *******************************/
+
+
+        label {
+            float: left;
+            width: 150;
+            text-align: right;
+            padding-right: 10px;
+
+        }
+
+        input,
+        textarea {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        #mySubmit {
+            margin-top: 25px;
+            margin-left: 260px;
+        }
